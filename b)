@@ -1,0 +1,8 @@
+//the variables are
+private String courseName;  // Variable to store the name of the course
+    private String courseID;    // Variable to store the ID of the course
+    private int tuition;        // Variable to store the tuition fee of the course
+// Declare variables
+        int age; // Variable to store age
+        String name; // Variable to store name
+        boolean isStudent = true; // Variable to store whether a person is a student or not (initialized with a value)
