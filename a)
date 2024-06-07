@@ -1,0 +1,67 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package balex;
+
+/**
+ *
+ * @author Joanita
+ */
+public class courses {
+    private String courseName;
+    private String courseID;
+    private int tuition;
+
+    public courses(String courseName, String courseID, int tuition) {
+        this.courseName = courseName;
+        this.courseID = courseID;
+        this.tuition = tuition;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getCourseID() {
+        return courseID;
+    }
+
+    public void setCourseID(String courseID) {
+        this.courseID = courseID;
+    }
+
+    public int getTuition() {
+        return tuition;
+    }
+
+    public void setTuition(int tuition) {
+        this.tuition = tuition;
+    }
+
+    @Override
+    public String toString() {
+        return "Course: " + courseName + ", CourseID: " + courseID + ", Tuition: " + tuition;
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        courses[] courses = {
+            new courses("Software Engineering", "BSE", 900000),
+            new courses("Information Technology", "BIT", 750000),
+            new courses("Computer Science", "BCS", 800000),
+            new courses("Computer Engineering", "BCE", 950000)
+        };
+
+        for (courses course : courses) {
+            System.out.println(course);
+        }
+    }
+}
+
